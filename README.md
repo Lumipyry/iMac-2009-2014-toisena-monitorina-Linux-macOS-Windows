@@ -1,13 +1,17 @@
-# Näin käytät iMac konetta 2-näyttönä Linuxissa
+# iMac 2009-2014 ulkoisena näyttönä virtanäppäintä painamalla
 ![imac-target-display-mode-hero](https://github.com/user-attachments/assets/f5948c13-a0b7-4bae-abd1-c50fb6f6df32)
 
 _In english: [    Step-by-step-instructions-for-using-iMac-in-Target-Display-Mode](https://github.com/Lumipyry/Step-by-step-instructions-for-using-iMac-in-Target-Display-Mode)_
 
-Tämä on asennusohje [smc_util](https://github.com/floe/smc_util):lle sisältäen FreekMank:n [tuen virtanäppäimen käytölle](https://github.com/floe/smc_util/pull/11/commits).
+Pääkoneessa voi olla macOS, Linux tai Windows. 
 
-Kohdenäyttötila (Target Display Mode = TDM) käynnistetään ja sammutetaan painamalla virtanäppäintä.
+Hienointa on että kone voi vaihtaa ulkoiseksi näytöksi ja Linux koneeksi pelkästään virtanäppäintä painamalla - tai asettaa käynnistymään suoraan 2-näytöksi.
 
-Soveltuu iMac malleihin [2009-2014](https://support.apple.com/fi-fi/105126). Ulkoisena näyttönä käytettävässä koneessa tulee olla sekä Linux että Apple High Sierra tai aikaisempi.
+Ohje soveltuu iMac vuosimalleihin 2009-2014. 
+
+Jos pääkoneessa on macOS on mahdollista käyttää myös macOS:n omaa näytön peilausta/ulkoista näyttöä asentamalla macOS Sequoia käyttäen [Open Core Legacy Patcher](https://github.com/dortania/Opencore-Legacy-Patcher)-ohjelmaa. Hyvä video sen asentamiseen on [täällä](https://www.youtube.com/watch?v=in5-3EjKFqA). Itse sain näytön peilauksen/ulkoisen näytön toimimaan vuoden 2011 21" iMacissa asentamalla Sequoian mutta en vuoden 2010 27" mallissa.
+
+Tämä ohje perustuu [smc_util](https://github.com/floe/smc_util):iin sisältäen FreekMank:n [tuen virtanäppäimen käytölle](https://github.com/floe/smc_util/pull/11/commits). Ulkoisena näyttönä käytettävään koneeseen tulee asentaa sekä Linux että Apple High Sierra tai aikaisempi.
 
 Toimii todistettavasti MiniDisplay Port kaapelilla. Ei toimi Thunderbolt kaapelilla ainakaan jos näyttö-iMac ei tue sitä (2009-2011). Testattu iMac malleilla 2009-2011. Ei varmuutta Thunderbolt kaapelin toimivuudesta myöhemmissä iMac-malleissa (kokeilemalla selviää).
 
