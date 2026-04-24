@@ -1,7 +1,7 @@
 # iMac 2009-2014 ulkoisena näyttönä virtanäppäintä painamalla
 ![imac-target-display-mode-hero](https://github.com/user-attachments/assets/f5948c13-a0b7-4bae-abd1-c50fb6f6df32)
 
-_In english: [    Step-by-step-instructions-for-using-iMac-in-Target-Display-Mode](https://github.com/Lumipyry/Step-by-step-instructions-for-using-iMac-in-Target-Display-Mode)_
+_In english: [Use-iMac-2009-2014-as-an-external-display-in-Linux--macOS-and-Windows](https://github.com/Lumipyry/Use-iMac-2009-2014-as-an-external-display-in-Linux-macOS-and-Windows)_
 
 Ohje soveltuu iMac vuosimalleihin 2009-2014. 
 
