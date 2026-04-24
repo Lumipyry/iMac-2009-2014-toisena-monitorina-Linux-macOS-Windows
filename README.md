@@ -3,11 +3,11 @@
 
 _In english: [    Step-by-step-instructions-for-using-iMac-in-Target-Display-Mode](https://github.com/Lumipyry/Step-by-step-instructions-for-using-iMac-in-Target-Display-Mode)_
 
-Pääkoneessa voi olla macOS, Linux tai Windows. 
+Ohje soveltuu iMac vuosimalleihin 2009-2014. 
 
 Hienointa on että kone voi vaihtaa ulkoiseksi näytöksi ja Linux koneeksi pelkästään virtanäppäintä painamalla - tai asettaa käynnistymään suoraan 2-näytöksi.
 
-Ohje soveltuu iMac vuosimalleihin 2009-2014. 
+Pääkoneessa voi olla macOS, Linux tai Windows. 
 
 Jos pääkoneessa on macOS on mahdollista käyttää myös macOS:n omaa näytön peilausta/ulkoista näyttöä asentamalla macOS Sequoia käyttäen [Open Core Legacy Patcher](https://github.com/dortania/Opencore-Legacy-Patcher)-ohjelmaa. Hyvä video sen asentamiseen on [täällä](https://www.youtube.com/watch?v=in5-3EjKFqA). Itse sain näytön peilauksen/ulkoisen näytön toimimaan vuoden 2011 21" iMacissa asentamalla Sequoian mutta en vuoden 2010 27" mallissa.
 
