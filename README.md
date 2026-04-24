@@ -9,12 +9,11 @@ Hienointa on että kone voi vaihtaa ulkoiseksi näytöksi ja Linux koneeksi pelk
 
 Pääkoneessa voi olla macOS, Linux tai Windows. 
 
-Jos pääkoneessa on macOS on mahdollista käyttää myös macOS:n omaa näytön peilausta/ulkoista näyttöä asentamalla macOS Sequoia käyttäen [Open Core Legacy Patcher](https://github.com/dortania/Opencore-Legacy-Patcher)-ohjelmaa. Hyvä video sen asentamiseen on [täällä](https://www.youtube.com/watch?v=in5-3EjKFqA). Itse sain näytön peilauksen/ulkoisen näytön toimimaan vuoden 2011 21" iMacissa asentamalla Sequoian mutta en vuoden 2010 27" mallissa.
-
 Tämä ohje perustuu [smc_util](https://github.com/floe/smc_util):iin sisältäen FreekMank:n [tuen virtanäppäimen käytölle](https://github.com/floe/smc_util/pull/11/commits). Ulkoisena näyttönä käytettävään koneeseen tulee asentaa sekä Linux että Apple High Sierra tai aikaisempi.
 
 Toimii todistettavasti MiniDisplay Port kaapelilla. Ei toimi Thunderbolt kaapelilla ainakaan jos näyttö-iMac ei tue sitä (2009-2011). Testattu iMac malleilla 2009-2011. Ei varmuutta Thunderbolt kaapelin toimivuudesta myöhemmissä iMac-malleissa (kokeilemalla selviää).
 
+Jos pääkoneessa on macOS on mahdollista käyttää myös macOS:n omaa näytön peilausta/ulkoista näyttöä asentamalla macOS Sequoia käyttäen [Open Core Legacy Patcher](https://github.com/dortania/Opencore-Legacy-Patcher)-ohjelmaa. Hyvä video sen asentamiseen on [täällä](https://www.youtube.com/watch?v=in5-3EjKFqA). Itse sain näytön peilauksen/ulkoisen näytön toimimaan vuoden 2011 21" iMacissa asentamalla Sequoian mutta en vuoden 2010 27" mallissa.
 ***
 Luultavasti haluat jättää kohdan 16 (`rc.local`) pois asennuksesta - jos ja kun haluat myös käyttää näyttökoneen Linux käyttöjärjestelmää. (`rc.local` käynnistää koneen suoraan kohdenäyttötilaan - ja silloin virtanäppäimen painaminen voi johtaa tyhjään näyttöön). Ilman `rc.local`:a kone käynnistyy ensin Linuxissa.
 ***
