@@ -11,7 +11,7 @@ Hienointa on että kone voi vaihtaa ulkoiseksi näytöksi ja Linux koneeksi pelk
 
 Pääkoneessa voi olla macOS, Linux tai Windows. 
 
-Tämä ohje perustuu [smc_util](https://github.com/floe/smc_util):iin sisältäen FreekMank:n [tuen virtanäppäimen käytölle](https://github.com/floe/smc_util/pull/11/commits). Ulkoisena näyttönä käytettävään koneeseen tulee asentaa sekä Linux että Apple High Sierra tai aikaisempi.
+Tämä ohje perustuu [smc_util](https://github.com/floe/smc_util):iin sisältäen FreekMank:n [tuen virtanäppäimen käytölle](https://github.com/floe/smc_util/pull/11/commits).
 
 Toimii todistettavasti MiniDisplay Port kaapelilla. Ei toimi Thunderbolt kaapelilla ainakaan jos näyttö-iMac ei tue sitä (2009-2011). Testattu iMac malleilla 2009-2011. Ei varmuutta Thunderbolt kaapelin toimivuudesta myöhemmissä iMac-malleissa (kokeilemalla selviää).
 
@@ -172,8 +172,7 @@ sudo systemctl restart acpid
 18.Vaihda virtanäppäimen toiminta asetusten osassa Virranhallinta seuraavanlaiseksi
 
 `Älä tee mitään`
-***
-TDM:n sammutus eli "Off": Kytke ensin ulkoinen näyttö pois käytöstä pääkoneen näyttöasetuksista ja paina sitten virtanäppäintä näyttönä toimivassa iMacissa.
+
 
 ***
 Vinkki: Näyttönä toimivaan iMaciin kannattaa asentaa Samba palvelin ja kytkeä koneet yhteen Ethernet-piuhalla. Näin voit käyttää näyttökoneen tiedostojärjestelmää tallennustilana ja siirtää tiedostoja koneiden välillä. [Ohje löytyy täältä](https://github.com/Lumipyry/Luo-kotiverkko-ja-asenna-Samba-palvelin)
