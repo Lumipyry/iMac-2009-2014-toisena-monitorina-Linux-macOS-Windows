@@ -37,11 +37,11 @@ gcc -O2 -o SmcDumpKey SmcDumpKey.c -Wall
 ```
 touch tdm_toggle.sh powerbutton powerbutton.sh rc.local
 ```
-5.Vaihda tiedoston tdm_off.sh sisältö seuraavanlaiseksi (käyttämällä päätteessä komentoa `nano tdm_off.sh`) 
+5.Vaihda tiedoston tdm_off.sh sisältö (käyttämällä päätteessä komentoa `nano tdm_off.sh`) tai avaamalla tiedosto tekstinkäsittelyohjelmalla 
 ```
 nano tdm_off.sh
 ```
-tai avaamalla tiedosto tekstinkäsittelyohjelmalla 
+seuraavanlaiseksi
 ```
 #!/bin/bash
 rm -f tdm_started
@@ -92,7 +92,7 @@ nano powerbutton
 event=button/power PBTN
 action=/etc/acpi/powerbutton.sh
 ```
-9.Luo seuraava sisältö tiedostoon powerbutton.sh. `MUISTA VAIHTAA XXXXXXXXX omaan käyttäjänimeesi (KAHDESSA kohdassa scriptissä)`
+9.Luo seuraava sisältö tiedostoon powerbutton.sh. `MUISTA VAIHTAA **** omaan käyttäjänimeesi (KAHDESSA kohdassa scriptissä)`
 ```
 nano powerbutton.sh
 ```
@@ -117,18 +117,18 @@ if [[ -f "$FILE" ]]; then
     shutdown now
   else
     echo "Toggle TDM"
-    /home/XXXXXXXXX/smc_util/tdm_toggle.sh &
+    /home/****/smc_util/tdm_toggle.sh &
   fi
 else
   echo "Toggle TDM"
-  /home/XXXXXXXXX/smc_util/tdm_toggle.sh &
+  /home/****/smc_util/tdm_toggle.sh &
 fi
 
 echo $NOW > $FILE
 
 popd
 ```
-10.Luo seuraava sisältö tiedostoon rc.local. `MUISTA VAIHTAA XXXXXXXXX omaan käyttäjänimeesi`
+10.Luo seuraava sisältö tiedostoon rc.local. `MUISTA VAIHTAA **** omaan käyttäjänimeesi`
 ```
 nano rc.local
 ```
@@ -137,7 +137,7 @@ nano rc.local
 
 # Start Target Display Mode such that the pc is used as external monitor right away
 # Note: The Power button toggles TDM (see /etc/acpi/events)
-pushd /home/XXXXXXXXX/smc_util
+pushd /home/****/smc_util
 ./tdm_on.sh
 popd
 ```
@@ -145,25 +145,25 @@ popd
 ```
 sudo rmmod applesmc
 ```
-12.Muuta tdm_toggle.sh, rc.local ja powerbutton.sh suoritettaviksi (`vaihda XXXXXXXX`)
+12.Muuta tdm_toggle.sh, rc.local ja powerbutton.sh suoritettaviksi (`vaihda ****`)
 ```
-sudo chmod +x /home/XXXXXXXXX/smc_util/tdm_toggle.sh /home/XXXXXXXXX/smc_util/rc.local /home/XXXXXXXXX/smc_util/powerbutton.sh
+sudo chmod +x /home/****/smc_util/tdm_toggle.sh /home/****/smc_util/rc.local /home/****/smc_util/powerbutton.sh
 ```
 13.Asenna build-essential ja acpid
 ```
 sudo apt install build-essential acpid
 ```
-14. Kopioi tiedosto powerbutton hakemistoon /etc/acpi/events (`vaihda XXXXXXXXXX`)
+14. Kopioi tiedosto powerbutton hakemistoon /etc/acpi/events (`vaihda ****`)
 ```
 sudo cp /home/XXXXXXXXX/smc_util/powerbutton /etc/acpi/events
 ```
-15.Kopioi tiedosto powerbutton.sh hakemistoon /etc/acpi (`vaihda XXXXXXXX`)
+15.Kopioi tiedosto powerbutton.sh hakemistoon /etc/acpi (`vaihda ****`)
 ```
-sudo cp /home/XXXXXXXXX/smc_util/powerbutton.sh /etc/acpi
+sudo cp /home/****/smc_util/powerbutton.sh /etc/acpi
 ```
-16.Kopioi tiedosto rc.local hakemistoon /etc (`vaihda XXXXXXXX`)
+16.Kopioi tiedosto rc.local hakemistoon /etc (`vaihda ****`)
 ```
-sudo cp /home/XXXXXXXXX/smc_util/rc.local /etc/rc.local
+sudo cp /home/****/smc_util/rc.local /etc/rc.local
 ```
 17.Käynnistä `acpid` uudelleen
 ```
